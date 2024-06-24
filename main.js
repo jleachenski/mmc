@@ -32,12 +32,7 @@ process.stdin.on("data", function(data) {
 
         i = menor
 
-        let j = 1
-        if (i % 2 == 0) {
-            j = 2
-        }
-
-        for(i; i > 0; i-=j) {
+        for(i; i > 0; i--) {
             if(numero1 % i == 0 && numero2 % i ==0) {
                 console.log("MDC: " + i)
                 break;
